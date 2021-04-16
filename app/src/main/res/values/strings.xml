@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Project1</string>
+    <string name="cash">Cash</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="sau_bowl">SAU BOWL</string>
+    <string name="welcome">Welcome, guest! You can choose ingredients to suit your taste for your bowl portion</string>
+    <string name="button_choose">Go to choose</string>
+    <string name="proteins">Proteins</string>
+    <string name="carbohydrates">Carbohydrates</string>
+    <string name="cellulose">Cellulose</string>
+    <string name="fat">Fat</string>
+    <string name="eggs">Eggs</string>
+    <string name="_0">0</string>
+    <string name="egg_300_tenge">300 tenge</string>
+    <string name="chicken">Chicken</string>
+    <string name="chicken_1200_tenge">1200 tenge</string>
+    <string name="cheese">Cheese</string>
+    <string name="cheese_2000_tenge">2000 tenge</string>
+    <string name="button_order">Order</string>
+    <string name="info_number">8-707-595-56-54</string>
+    <string name="shop_info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus hendrerit luctus. Phasellus pellentesque in orci id blandit. Duis vel tortor nisl. Vivamus mollis nisi in sagittis faucibus. Nunc tempus ante eget sem ornare porttitor. Duis non ipsum neque. Donec vel rutrum nunc, sed rhoncus ipsum.</string>
+    <string name="address_info">Almaty, Abay street 26</string>
+    <string-array name="cities">
+        <item>Almaty</item>
+        <item>Astana</item>
+        <item>Zhezkazgan</item>
+        <item>Qaskelen</item>
+        <item>Karagandy</item>
+        <item>Qoishybek</item>
+        <item>Atyrau</item>
+    </string-array>
+    <string-array name="info">
+        <item>Contacts</item>
+        <item>About shop</item>
+        <item>Address</item>
+
+    </string-array>
+</resources>

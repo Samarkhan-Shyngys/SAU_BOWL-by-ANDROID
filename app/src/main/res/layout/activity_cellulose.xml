@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Proteins"
+    android:background="@color/orange">
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        app:srcCompat="@drawable/back"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="40px"/>
+    <TextView
+        android:id="@+id/heading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAU BOWL"
+        android:textSize="76px"
+        android:textColor="@color/brown"
+        android:layout_marginTop="100px"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/proteins_img"
+        android:layout_width="200px"
+        android:layout_height="150px"
+        android:layout_marginTop="100px"
+        app:srcCompat="@drawable/proteins"
+        android:layout_below="@+id/back"
+        android:layout_alignLeft="@+id/back"/>
+
+    <ImageView
+        android:id="@+id/carbohydrates_img"
+        android:layout_width="200px"
+        android:layout_height="150px"
+        android:layout_alignTop="@+id/proteins_img"
+        app:srcCompat="@drawable/carbohydrates"
+        android:layout_below="@+id/back"
+        android:layout_toRightOf="@id/back"
+        android:layout_marginLeft="150px"/>
+    <ImageView
+        android:id="@+id/cellulose_img"
+        android:layout_width="200px"
+        android:layout_height="150px"
+        android:layout_alignTop="@+id/proteins_img"
+        app:srcCompat="@drawable/cellulose"
+        android:layout_below="@+id/back"
+        android:layout_toRightOf="@id/carbohydrates_img"
+        android:layout_marginLeft="70px" />
+    <ImageView
+        android:id="@+id/fat_img"
+        android:layout_width="200px"
+        android:layout_height="150px"
+        android:layout_alignTop="@+id/proteins_img"
+        app:srcCompat="@drawable/fat"
+        android:layout_below="@+id/back"
+        android:layout_toRightOf="@id/cellulose_img"
+        android:layout_marginLeft="60px"/>
+    <TextView
+        android:id="@+id/proteins_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proteins"
+        android:layout_below="@id/proteins_img"
+        android:layout_marginLeft="55px"
+        android:textSize="44px"
+        />
+    <TextView
+        android:id="@+id/carbohydrates_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carbohydrates"
+        android:layout_below="@id/carbohydrates_img"
+        android:layout_marginLeft="240px"
+        android:textSize="44px"
+        />
+    <TextView
+        android:id="@+id/cellulose_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cellulose"
+        android:textStyle="bold"
+        android:layout_below="@id/cellulose_img"
+        android:layout_marginLeft="570px"
+        android:textSize="44px"
+        />
+    <TextView
+        android:id="@+id/fat_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fat"
+        android:layout_below="@id/fat_img"
+        android:layout_marginLeft="888px"
+        android:textSize="44px"
+        />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/proteins_text"
+        android:background="@color/green"
+        android:layout_marginTop="60px"/>
+    <TextView
+        android:id="@+id/beens_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green Beans"
+        android:textSize="100px"
+        android:layout_below="@+id/line1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"/>
+    <ImageView
+        android:id="@+id/beens_img"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="50px"
+        app:srcCompat="@drawable/beens"
+        android:layout_below="@id/line1"
+        android:layout_toRightOf="@id/beens_text"/>
+
+    <ImageView
+        android:id="@+id/beens_plus"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        app:srcCompat="@drawable/plus"
+        android:layout_below="@id/beens_text"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="60px"/>
+
+    <TextView
+        android:id="@+id/beens_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textStyle="bold"
+        android:textSize="70px"
+        android:layout_alignTop="@+id/beens_plus"
+        android:layout_toRightOf="@id/beens_plus"
+        android:layout_marginTop="-15px"
+        android:layout_marginLeft="25px"/>
+
+    <ImageView
+        android:id="@+id/beens_minus"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        app:srcCompat="@drawable/minus"
+        android:layout_marginLeft="200px"
+        android:layout_alignTop="@+id/beens_plus" />
+    <TextView
+        android:id="@+id/beens_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1200 tenge"
+        android:layout_toRightOf="@id/beens_minus"
+        android:layout_alignTop="@id/beens_plus"
+        android:textSize="60px"
+        android:layout_marginTop="-15px"
+        android:layout_marginLeft="100px"
+        />
+
+
+
+
+
+
+
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/beens_plus"
+        android:background="@color/green"
+        android:layout_marginTop="60px"/>
+    <TextView
+        android:id="@+id/nuts_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuts"
+        android:textSize="100px"
+        android:layout_below="@+id/line2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"/>
+    <ImageView
+        android:id="@+id/nuts_img"
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:layout_marginLeft="120px"
+        android:layout_marginTop="50px"
+        app:srcCompat="@drawable/nuts"
+        android:layout_below="@id/line2"
+        android:layout_toRightOf="@id/nuts_text"/>
+
+    <ImageView
+        android:id="@+id/nuts_plus"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        app:srcCompat="@drawable/plus"
+        android:layout_below="@id/nuts_text"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="60px"/>
+
+    <TextView
+        android:id="@+id/nuts_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textStyle="bold"
+        android:textSize="70px"
+        android:layout_alignTop="@+id/nuts_plus"
+        android:layout_toRightOf="@id/nuts_plus"
+        android:layout_marginTop="-15px"
+        android:layout_marginLeft="25px"/>
+
+    <ImageView
+        android:id="@+id/nuts_minus"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        app:srcCompat="@drawable/minus"
+        android:layout_marginLeft="200px"
+        android:layout_alignTop="@+id/nuts_plus" />
+    <TextView
+        android:id="@+id/nuts_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3000 tenge"
+        android:layout_toRightOf="@id/nuts_minus"
+        android:layout_alignTop="@id/nuts_plus"
+        android:textSize="60px"
+        android:layout_marginTop="-15px"
+        android:layout_marginLeft="100px"
+        />
+
+
+
+
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/nuts_plus"
+        android:background="@color/green"
+        android:layout_marginTop="60px"/>
+
+    <TextView
+        android:id="@+id/lentils_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lentils"
+        android:textSize="100px"
+        android:layout_below="@+id/line3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"/>
+    <ImageView
+        android:id="@+id/lentils_img"
+        android:layout_width="300px"
+        android:layout_height="250px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="50px"
+        app:srcCompat="@drawable/lentil"
+        android:layout_below="@id/line3"
+        android:layout_toRightOf="@id/lentils_text"/>
+
+    <ImageView
+        android:id="@+id/lentils_plus"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        app:srcCompat="@drawable/plus"
+        android:layout_below="@id/lentils_text"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="60px"/>
+
+    <TextView
+        android:id="@+id/lentils_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textStyle="bold"
+        android:textSize="70px"
+        android:layout_alignTop="@+id/lentils_plus"
+        android:layout_toRightOf="@id/lentils_plus"
+        android:layout_marginTop="-15px"
+        android:layout_marginLeft="25px"/>
+
+    <ImageView
+        android:id="@+id/lentils_minus"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        app:srcCompat="@drawable/minus"
+        android:layout_marginLeft="200px"
+        android:layout_alignTop="@+id/lentils_plus" />
+    <TextView
+        android:id="@+id/lentils_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="600 tenge"
+        android:layout_toRightOf="@id/lentils_minus"
+        android:layout_alignTop="@id/lentils_plus"
+        android:textSize="60px"
+        android:layout_marginTop="-15px"
+        android:layout_marginLeft="100px"
+        />
+
+    <Button
+        android:id="@+id/order_btn"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:background="@drawable/orange_round_button"
+        android:textColor="@color/green"
+        android:layout_below="@id/lentils_plus"
+        android:layout_marginTop="70px"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

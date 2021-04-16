@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Info"
+    android:background="@color/orange">
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        app:srcCompat="@drawable/home"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="40px"
+        android:onClick="GoToMain"/>
+
+    <TextView
+        android:id="@+id/textViewAboutUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:textSize="30sp"
+        android:text="About us" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewAboutUs"
+        android:layout_marginTop="70dp"
+        android:entries="@array/info"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listView"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:layout_marginTop="50dp"
+        android:text=""
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</RelativeLayout>
